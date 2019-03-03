@@ -1,3 +1,12 @@
-<p>
-  ram-usage-timeline works!
-</p>
+<div *ngIf="results.length > 0" class="container" style="height: 400px;">
+  <ngx-charts-line-chart
+    [results]="results"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [scheme]="colorScheme"
+    [schemeType]="schemeType"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel">
+  </ngx-charts-line-chart>
+</div>

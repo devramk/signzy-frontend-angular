@@ -11,6 +11,7 @@ import { SuperLayoutComponent } from './shared/layouts/super-layout/super-layout
 import { HeaderLayoutComponent } from './shared/layouts/header-layout/header-layout.component';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './app.router';
+import {NgxGaugeModule} from 'ngx-gauge';
 
 @NgModule({
   declarations: [

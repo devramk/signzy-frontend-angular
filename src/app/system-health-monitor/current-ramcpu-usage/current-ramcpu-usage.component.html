@@ -1,3 +1,8 @@
-<p>
-  current-ramcpu-usage works!
-</p>
+<div class="row">
+  <section class="col-sm-6 d-flex justify-content-center">
+    <ngx-gauge [size]="gaugeSize" [label]="gaugeLabelCpu" [thick]="gaugeThick" [type]="gaugeType" [append]="gaugeAppendText" [value]="currentUsageDetails.cpuUsagePercent"></ngx-gauge>
+  </section>
+  <section class="col-sm-6 d-flex justify-content-center">
+    <ngx-gauge [size]="gaugeSize" [label]="gaugeLabelRam" [thick]="gaugeThick" [type]="gaugeType" [append]="gaugeAppendText" [value]="currentUsageDetails.memoryUsagePercent"></ngx-gauge>
+  </section>
+</div>

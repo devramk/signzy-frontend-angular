@@ -8,6 +8,7 @@ import {NbCardModule, NbRouteTabsetModule, NbTabsetModule} from '@nebular/theme'
 import { CurrentRamcpuUsageComponent } from './current-ramcpu-usage/current-ramcpu-usage.component';
 import { RamUsageTimelineComponent } from './ram-usage-timeline/ram-usage-timeline.component';
 import { CpuUsageTimelineComponent } from './cpu-usage-timeline/cpu-usage-timeline.component';
+import {NgxGaugeModule} from 'ngx-gauge';
 
 @NgModule({
   declarations: [HomeComponent, CurrentRamcpuUsageComponent, RamUsageTimelineComponent, CpuUsageTimelineComponent],
@@ -18,7 +19,8 @@ import { CpuUsageTimelineComponent } from './cpu-usage-timeline/cpu-usage-timeli
     NbTabsetModule,
     NbCardModule,
     NgxChartsModule,
-    systemHealthMonitorRouting
+    systemHealthMonitorRouting,
+    NgxGaugeModule
   ]
 })
 export class SystemHealthMonitorModule { }

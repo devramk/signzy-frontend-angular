@@ -1,3 +1,29 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <div class="row">
+    <section class="col-sm-12">
+      <nb-card>
+        <nb-card-header><h3>Current Usage</h3></nb-card-header>
+        <nb-card-body>
+          <app-current-ramcpu-usage></app-current-ramcpu-usage>
+        </nb-card-body>
+      </nb-card>
+      <br>
+    </section>
+    <section class="col-sm-6">
+      <nb-card>
+        <nb-card-header><h3>CPU Usage Timeline</h3></nb-card-header>
+        <nb-card-body>
+          <app-cpu-usage-timeline></app-cpu-usage-timeline>
+        </nb-card-body>
+      </nb-card>
+    </section>
+    <section class="col-sm-6">
+      <nb-card>
+        <nb-card-header><h3>Memory Usage Timeline</h3></nb-card-header>
+        <nb-card-body>
+          <app-ram-usage-timeline></app-ram-usage-timeline>
+        </nb-card-body>
+      </nb-card>
+    </section>
+  </div>
+</div>
