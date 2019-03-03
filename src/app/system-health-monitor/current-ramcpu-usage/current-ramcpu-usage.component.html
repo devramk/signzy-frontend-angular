@@ -1,4 +1,4 @@
-<div class="row">
+<div *ngIf="showGauge" class="row">
   <section class="col-sm-6 d-flex justify-content-center">
     <ngx-gauge [size]="gaugeSize" [label]="gaugeLabelCpu" [thick]="gaugeThick" [type]="gaugeType" [append]="gaugeAppendText" [value]="currentUsageDetails.cpuUsagePercent"></ngx-gauge>
   </section>

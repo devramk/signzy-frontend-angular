@@ -15,8 +15,11 @@ export class CurrentRamcpuUsageComponent implements OnInit {
   gaugeLabelCpu: string = 'CPU';
   gaugeLabelRam: string = 'RAM';
   gaugeAppendText: string = '%';
+  showGauge: boolean;
 
-  constructor(private systemMonitorService: SystemMonitorService) { }
+  constructor(private systemMonitorService: SystemMonitorService) {
+    this.showGauge = false;
+  }
 
   ngOnInit() {
     this.getCurrentSystemUsage();
@@ -30,6 +33,7 @@ export class CurrentRamcpuUsageComponent implements OnInit {
       currentUsage => {
         this.currentUsageDetails = currentUsage;
         console.log(this.currentUsageDetails);
+        this.showGauge = true;
       },
       error => {
         console.log(error);
